@@ -17,39 +17,51 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@700&family=Montserrat&display=swap" rel="stylesheet"></head>
 <body class="">
-    <div class="container pt-5 mt-5">
+
+    <div class="alert alert-success" role="alert" id="succ">
+        <p id="txt">
+         <strong>Success!</strong> You have been signed up successfully!
+        </p>
+      </div>
+    <div class="alert " role="alert" id="fail">
+        <p id="txt">
+            <strong>Sorry!</strong> You have entered an invalid E-mail.
+        </p>
+    </div>
+    <div class="container pt-4 mt-4">
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-6 col-md-12 col-sm-12 shadow rounded-3">
-                <img src="images/favicon2.png"  data-aos="fade-up"  data-aos-anchor-placement="top-bottom" class="img-responsive rounded mx-auto d-block" width="130" height="130" alt="logo">
-                <h1 class="text-center" data-aos="fade-up" data-aos-duration="3000">Be intentional about</br>your  <span class="text-info rounded-pill shadow">finances</span></h1>
-                <p class="text-center pt-2" data-aos="fade-up" data-aos-duration="3000">Path way to financial literacy on savings, budgeting & investment</p>
-                
-                <div class="px-lg-5 py-3" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
-                    <form class="row g-2">
-                        <label for="exampleFormControlInput1" class="form-label mb-0 pb-0 text-light text-left">Email address</label>
-                        <div class="col-lg-8 mx-0">
-                        <input type="email" class="form-control shadow rounded-pill" required id="colFormLabel" placeholder="abc@gmail.com...">
-                        </div>
-                        <div class="col-lg-4 mx-auto d-grid gap-2 d-block">
-                            <button type="submit" class="btn btn-info text-dark text-bold rounded-pill shadow">Join Wishlist</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="" data-aos="fade-up">
-                    <img src="images/phone.png" class="img-responsive bt-img rounded mx-auto d-block" alt="phone">
+                <div class="mid-section">
+                    <img src="images/favicon2.png"  data-aos="fade-up"  data-aos-anchor-placement="top-bottom" class="img-responsive logo rounded mx-auto d-block" width="130" height="130" alt="logo">
+                    <h1 class="text-center" data-aos="fade-up" data-aos-duration="3000">Be intentional about</br>your  <span class="text-success">finances</span></h1>
+                    <p class="text-center pt-2" data-aos="fade-up" data-aos-duration="3000">Path way to financial literacy on savings, budgeting & investment</p>
+                    
+                    <div class="px-lg-5 py-3" data-aos="fade-up" data-aos-duration="3000" data-aos-anchor-placement="top-bottom">
+                        <form class="row g-2" action="https://sheetdb.io/api/v1/9mup2m1u3styi" method="POST" id="db-form">
+                            <label for="exampleFormControlInput1" class="form-label mb-0 pb-0 text-light text-left">Email address</label>
+                            <div class="col-lg-8 mx-0">
+                            <input type="email" name="data[email]" class="form-control shadow rounded-pill" required id="colFormLabel" placeholder="abc@gmail.com...">
+                            </div>
+                            <div class="col-lg-4 mx-auto d-grid gap-2 d-block">
+                                <button type="submit" class="btn btn-success text-light text-bold rounded-pill shadow"
+                                value= "submit_button" id="sub" onclick="save()">Join Wishlist</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="">
+                        <img src="images/phone.png" class="img-responsive bt-img rounded mx-auto d-block" alt="phone">
+                    </div>
                 </div>
             </div>
             <div class="col-lg-3"></div>
         </div>
     </div>    
 
-
-    
+    <script src="js/index.js"></script>
     <script>
         AOS.init();
       </script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="js/index.js"></script>
 </body>
 </html>
