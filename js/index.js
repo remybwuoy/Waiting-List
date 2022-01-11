@@ -8,7 +8,7 @@ var form = document.getElementById('db-form');
         response => response.json()
     ).then((html) => {
       // you can put any JS code here
-      alert('Successful')
+      // alert('Successful')
       window.location.href = 'https://remysportfolio.netlify.app/';
     });
   });
@@ -16,23 +16,23 @@ var form = document.getElementById('db-form');
 
 
 
-function save() 
-{
-    const data = document.getElementById('db-form').elements[0].value;
+// function save() 
+// {
+//     const data = document.getElementById('db-form').elements[0].value;
  
-  if(ValidateEmail(data))
-  {
-    database.ref('email').push({ email: data}).then(function(snapshot) {
-      pass(); // some success method
-      }, function(error) 
-         {
-            console.log('error' + error);
-            fail(); // some error method
-          });
-     document.getElementById('frm1').reset();
-  }
+//   if(ValidateEmail(data))
+//   {
+//     database.ref('email').push({ email: data}).then(function(snapshot) {
+//       pass(); // some success method
+//       }, function(error) 
+//          {
+//             console.log('error' + error);
+//             fail(); // some error method
+//           });
+//      document.getElementById('frm1').reset();
+//   }
 
-}
+// }
 
 // function ValidateEmail(mail) 
 // {
