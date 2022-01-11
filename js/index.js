@@ -8,8 +8,8 @@ var form = document.getElementById('db-form');
         response => response.json()
     ).then((html) => {
       // you can put any JS code here
-      // alert('Successful')
-      window.location.href = 'https://remysportfolio.netlify.app/';
+      alert('Successful')
+      // window.location.href = 'https://remysportfolio.netlify.app/';
     });
   });
 

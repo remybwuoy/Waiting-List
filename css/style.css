@@ -58,7 +58,7 @@ h1{
     font-weight:700;
     color: #fff;
     font-family: 'Amaranth', sans-serif;
-    text-shadow: 2px 3px 4px rgb(8, 8, 8);
+    text-shadow: 1px 1px 1px rgb(8, 8, 8);
 }
 span{
     color:#a6f3a7;
@@ -80,6 +80,9 @@ button{
     font-weight: 400;
     background: #a6f3a7;
 }
+button:hover{
+    background: #308a31;
+}
 
 .bt-img{
     width: 80%;
@@ -92,6 +95,11 @@ button{
 .footer p{
     position: absolute;
     bottom: 0px;
-    text-align: center;
-    
+    text-align: center;  
+}
+
+@media screen and (max-width: 992px) {
+    .footer p{
+    visibility: hidden;
+    }
 }
