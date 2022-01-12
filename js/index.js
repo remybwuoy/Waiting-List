@@ -8,7 +8,7 @@ var form = document.getElementById('db-form');
         response => response.json()
     ).then((html) => {
       // you can put any JS code here
-      swal("Good job!", "You clicked the button!", "success")
+      swal("Good job!", "Successful!", "success")
       // alert('Successful')
       // window.location.href = 'https://abc.com';
     });
