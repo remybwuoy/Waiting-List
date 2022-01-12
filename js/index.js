@@ -13,3 +13,11 @@ var form = document.getElementById('db-form');
       // window.location.href = 'https://abc.com';
     });
   });
+
+  function change() // no ';' here
+{
+    var elem = document.getElementById("submitBtn");
+    if (elem.value=="Submitting") elem.value = "Join Waitlist";
+    else elem.value = "Submitting";
+}
+
