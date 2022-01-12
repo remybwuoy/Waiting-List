@@ -9,7 +9,7 @@ var form = document.getElementById('db-form');
     ).then((html) => {
       // you can put any JS code here
       swal("Good job!", "Successful!", "success")
-      // alert('Successful')
+      document.getElementById("db-form").reset();
       // window.location.href = 'https://abc.com';
     });
   });

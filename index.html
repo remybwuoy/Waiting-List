@@ -13,22 +13,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins:wght@700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     </head>
     <body>
-    <!-- <div class="alert alert-success" role="alert" id="succ">
-        <p id="txt">
-         <strong>Success!</strong> You have been signed up successfully!
-        </p>
-      </div>
-    <div class="alert " role="alert" id="fail">
-        <p id="txt">
-            <strong>Sorry!</strong> You have entered an invalid E-mail.
-        </p>
-    </div> -->
     <div class="container pt-3 mt-3">
         <div class="row">
             <div class="col-lg-3">
@@ -36,7 +29,7 @@
                     <p class="text-center text-light">@2021 Kakraba, All rights reserved</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="col-lg-6 col-md-12 col-sm-12" >
                 <div class="mid-section">
                     <img src="images/Frame 3510.svg"  data-aos="fade-up"  data-aos-anchor-placement="top-bottom" class="img-responsive logo rounded mx-auto d-block" width="180" height="180" alt="logo">
                     <h1 class="text-center" data-aos="fade-up" data-aos-duration="3000">Be intentional about</br>your  <span>finances</span></h1>
@@ -50,7 +43,7 @@
                             </div>
                             <div class="col-lg-4 mx-auto d-grid gap-2 d-block">
                                 <button type="submit" class="p-2 text-dark border border-0 rounded-pill"
-                                value= "submit_button" id="sub" onclick="save()">Join Wishlist</button>
+                                id="submitBtn" onclick="save()"><i class="fa fa-spinner fa-spin me-2"></i>Join Wishlist</button>
                             </div>
                         </form>
                     </div>
