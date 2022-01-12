@@ -44,11 +44,12 @@ button{
     font-family: 'Nunito', sans-serif; 
     text-shadow: 0.5px 0.5px 0.5px rgb(8, 8, 8);
     font-weight: 500;
-    background: #92e3a9;
+    background: #6db983;
 }
 button:hover{
     background: #6db983;
 }
+
 
 .bt-img{
     width: 70%;
